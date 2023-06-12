@@ -1,0 +1,106 @@
+@using BOL;
+@using System.Collections.Generic;
+@{  
+        int problem1= (int)TempData["problem1"];
+        int problem2= (int)TempData["problem2"];
+        int problem3= (int)TempData["problem3"];
+        int problem4= (int)TempData["problem4"];
+        int problem5= (int)TempData["problem5"];
+        int problem6= (int)TempData["problem6"]; 
+        int respid1 = (int)TempData["respid1"];
+        int respid2 = (int)TempData["respid2"];
+
+    string gender = TempData["gender"].ToString();
+    string uname = TempData["uname"].ToString();
+    @* List<int>ilist = TempData["query"] as List<int>; *@
+    List<ProblemResponse> slist =ViewData["solutionforQuery"] as List<ProblemResponse>;   
+}
+<html>
+    <meta>
+    <head>
+
+    </head>
+   
+    <body>
+        <form action="/home/ClientQueryResponse" method="get">
+         
+            <div align="left">
+             
+                 @{
+                    if(gender.Equals("F")){                          
+                         <h1 style="text-shadow: 6px 4px 4px rgb(238, 134, 136);color: rgb(128, 34, 0);"><u><i>Welcome Mrs @uname</i></u>
+                         <img src="/images/cutelady.png" alt="Health Routine checkup" height="180px" width="170px"></h1><br>
+                    }
+                    else{
+                         <h1 style="text-shadow: 6px 4px 4px rgb(232, 135, 139);color: rgb(128, 26, 0);"><u><i>Welcome Mr @uname</i></u>
+                         <img src="/images/male.png" alt="Health Routine checkup" height="180px" width="170px"></h1><br>
+                    }
+                 }
+                <h3 style="text-shadow: 6px 4px 4px rgb(60, 81, 143);color: rgb(111, 21, 102);">Thankyou,For your Queries</h3>
+                <h4 style="text-shadow: 6px 4px 4px rgb(60, 81, 143);color: rgb(111, 21, 102);">Prevention for those are provided By Best Md Doctors solutions are as Follows : </h4>
+             </div><br><br>
+             <div>
+             @{
+                if(problem1!=0 || problem2!=0 || problem3!=0|| problem4!=0){
+                 <div>
+                <h4 style="text-shadow: 6px 4px 4px rgb(65, 165, 65);color: green;"><u>Response for Medicose Section</u>&nbsp;&nbsp;
+                <img src="/images/medic.png" alt="Health Routine checkup" height="150px" width="120px">
+                </h4>
+             </div>
+             <div align="left">
+                @{
+                    foreach(ProblemResponse pr in slist){
+                        if(problem1!=null && pr.Id==problem1){
+                            <div><h6><i>@pr.Solution</i></h6></div>
+                        }if(problem2!=null && pr.Id==problem2){
+                            <div><h6><i>@pr.Solution</i></h6></div>
+                        }if(problem3!=null && pr.Id==problem3){
+                            <div><h6><i>@pr.Solution</i></h6></div>
+                        }if(problem4!=null && pr.Id==problem4){
+                            <div><h6><i>@pr.Solution</i></h6></div>
+                        }   
+                    }
+                }                   
+                  
+             </div>
+                }
+             }
+             </div><br><br>
+
+             <div>
+             @{
+                if(problem5!=0 || problem6!=0){
+                 <div>
+                <h4 style="text-shadow: 6px 4px 4px rgb(65, 165, 65);color: green;"><u>Response for (B.P) and (Oxygen) Section</u>&nbsp;&nbsp;
+                <img src="/images/heart.jpg" alt="Health Routine checkup" height="100px" width="130px">
+                </h4>
+             </div>
+             <div align="left">
+                @{
+                    foreach(ProblemResponse pr in slist){
+                       if(problem5!=null && pr.Id==problem5){
+                            if(pr.RespId==respid1){
+                              <div><h6><i>@pr.Solution</i></h6></div>
+                            }                            
+                        }if(problem6!=null && pr.Id==problem6){
+                            if(pr.RespId==respid2){
+                              <div><h6><i>@pr.Solution</i></h6></div>
+                            }                           
+                        }
+                    }
+                }                   
+                  
+             </div>
+                }
+             }
+             </div><br><br>
+            <div align="left">
+                <h5 style="text-shadow: 6px 4px 4px rgb(165, 65, 95);color: red;"><u><i>To keep your self Young always do small format of excercise like daily morning walk and meditation. this will keep you healthy and safe.</i></u>
+                <img src="/images/workout.png" alt="Health Routine checkup" height="140px" width="130px">               
+                </h5>
+                <h5 style="text-shadow: 6px 4px 4px rgb(165, 65, 95);color: red;"><u><i>All the best for your Nutritious Life</i></u></h5>
+            </div>
+
+        </form>
+    </body>
+</html>

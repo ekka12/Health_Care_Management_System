@@ -1,0 +1,247 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\MedicalCare\\MedicalCare.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BLL\\BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BLL\\BLL.csproj",
+        "projectName": "BLL",
+        "projectPath": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\dikesh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dikesh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BOL\\BOL.csproj": {
+                "projectPath": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BOL\\BOL.csproj"
+              },
+              "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\DAL\\DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BOL\\BOL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BOL\\BOL.csproj",
+        "projectName": "BOL",
+        "projectPath": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BOL\\BOL.csproj",
+        "packagesPath": "C:\\Users\\dikesh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BOL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dikesh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\DAL\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\dikesh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dikesh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BOL\\BOL.csproj": {
+                "projectPath": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BOL\\BOL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MySQL.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\MedicalCare\\MedicalCare.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\MedicalCare\\MedicalCare.csproj",
+        "projectName": "MedicalCare",
+        "projectPath": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\MedicalCare\\MedicalCare.csproj",
+        "packagesPath": "C:\\Users\\dikesh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\MedicalCare\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dikesh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BLL\\BLL.csproj": {
+                "projectPath": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BLL\\BLL.csproj"
+              },
+              "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BOL\\BOL.csproj": {
+                "projectPath": "C:\\Users\\dikesh\\Desktop\\krakins project\\Kratin Assignment\\BOL\\BOL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

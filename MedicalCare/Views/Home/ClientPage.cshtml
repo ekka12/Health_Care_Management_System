@@ -1,0 +1,107 @@
+@using BOL;
+@{
+    string uname = ViewData["uname"].ToString();
+    string gender = ViewData["gender"].ToString();
+    List<ProblemRequest> plist = ViewData["problems"] as List<ProblemRequest>;
+}
+
+
+<html>
+    <meta>
+    <head>
+
+    </head>
+    <body>
+        <form action="/home/ClientPage" method="post">
+              <div align="right">
+                <a href="/home/logout?Username==@uname" class="btn btn-dark btn-rounded" style="text-shadow: 8px 6px 6px white">Log Out</a>
+              </div>
+             <div align="left">
+              <input type="hidden" name="uname" id="uname" value="@uname"/>
+              <input type="hidden" name="gender" id="gender" value="@gender"/>
+                 @{
+                    if(gender.Equals("F")){                          
+                         <h1 style="text-shadow: 6px 4px 4px rgb(238, 134, 136);color: rgb(128, 34, 0);"><u><i>Welcome Mrs @uname</i></u>
+                         <img src="/images/cutelady.png" alt="Health Routine checkup" height="180px" width="170px"></h1>
+                    }
+                    else{
+                         <h1 style="text-shadow: 6px 4px 4px rgb(232, 135, 139);color: rgb(128, 26, 0);"><u><i>Welcome Mr @uname</i></u>
+                         <img src="/images/male.png" alt="Health Routine checkup" height="180px" width="170px"></h1>
+                    }
+                 }
+                 <div align="left">
+                  <h2 style="text-shadow: 6px 4px 4px rgb(238, 134, 136);color: rgb(128, 34, 0);"><i>Please go Through the daily routine checkup Query</i></h2>
+                 </div>
+
+             </div><br>
+             <div align="left">
+                   <h3 style="text-shadow: 6px 4px 4px rgb(65, 165, 65);color: green;" ><u>Medicose Section</u>&nbsp;&nbsp;
+                   <img src="/images/medic.png" alt="Health Routine checkup" height="150px" width="120px">
+                   </h3>
+                    @{
+                        foreach(ProblemRequest pr in plist){
+                            if(pr.Id==1){
+                              <div>
+                                @pr.Problem : <Input type="checkbox" name="problem1" id="problem1" value="@pr.Id"/>                                                              
+                              </div><br>
+                              
+                            }
+                             if(pr.Id==2){
+                              <div>
+                                @pr.Problem : <Input type="checkbox" name="problem2" id="problem2" value="@pr.Id"/>
+                              </div><br> 
+                              
+                            } if(pr.Id==3){
+                              <div>
+                                @pr.Problem : <Input type="checkbox" name="problem3" id="problem3" value="@pr.Id"/>
+                              </div><br>  
+                              
+                            } if(pr.Id==4){
+                              <div>
+                                @pr.Problem : <Input type="checkbox" name="problem4" id="problem4" value="@pr.Id"/>
+                              </div><br>  
+                              
+                            }
+                        }
+                    }
+             </div><br>
+             <div >
+                 <h3 style="text-shadow: 6px 4px 4px rgb(65, 165, 65);color: green;"><u>Body intenal flow checkup Section</u>&nbsp;&nbsp;
+                 <img src="/images/heart.jpg" alt="Health Routine checkup" height="100px" width="130px">
+                 </h3><br>
+                  @{
+                        foreach(ProblemRequest pr in plist){
+                            if(pr.Id==5){
+                              <div>
+                                @pr.Problem : <Input type="range" name="problem5" id="problem5" min="0" max="100" step="1" value="0" onchange="updateValue(this.value)"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span id="rangeValue">0</span>
+                                <input type="hidden" name="prob5id" id="prob5id" value="@pr.Id"/>
+                                <script>
+                                    function updateValue(value){
+                                        document.getElementById("rangeValue").innerText=value;
+                                    }
+                                </script>
+                              </div><br>
+                              
+                            }
+                             if(pr.Id==6){
+                             <div>
+                                @pr.Problem : <Input type="range" name="problem6" id="problem6" min="0" max="100" step="1" value="0" onchange="updateValue1(this.value)"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span id="rangeValue1">0</span>
+                                <input type="hidden" name="prob6id" id="prob6id" value="@pr.Id"/>
+                                <script>
+                                    function updateValue1(value){
+                                        document.getElementById("rangeValue1").innerText=value;
+                                    }
+                                </script>
+                              </div><br>
+                            } 
+                        }
+                    }
+             </div><br><br>
+             <button type="submit" name="btn" id="btn" class="btn btn-primary btn-rounded" style="text-shadow: 6px 5px 5px black">Submit Query</button>&nbsp;&nbsp;
+             <button type="reset" name="btn" id="btn" class="btn btn-danger btn-rounded" style="text-shadow: 6px 5px 5px black">Reset Query</button>
+
+        </form>
+    </body>
+</html>

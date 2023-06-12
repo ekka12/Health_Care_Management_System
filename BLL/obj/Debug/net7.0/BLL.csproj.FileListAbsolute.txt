@@ -1,0 +1,17 @@
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\bin\Debug\net7.0\BLL.deps.json
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\bin\Debug\net7.0\BLL.dll
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\bin\Debug\net7.0\BLL.pdb
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\bin\Debug\net7.0\BOL.dll
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\bin\Debug\net7.0\DAL.dll
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\bin\Debug\net7.0\BOL.pdb
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\bin\Debug\net7.0\DAL.pdb
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\obj\Debug\net7.0\BLL.csproj.AssemblyReference.cache
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\obj\Debug\net7.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\obj\Debug\net7.0\BLL.AssemblyInfoInputs.cache
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\obj\Debug\net7.0\BLL.AssemblyInfo.cs
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\obj\Debug\net7.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\obj\Debug\net7.0\BLL.csproj.CopyComplete
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\obj\Debug\net7.0\BLL.dll
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\obj\Debug\net7.0\refint\BLL.dll
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\obj\Debug\net7.0\BLL.pdb
+C:\Users\dikesh\Desktop\krakins project\Kratin Assignment\BLL\obj\Debug\net7.0\ref\BLL.dll
